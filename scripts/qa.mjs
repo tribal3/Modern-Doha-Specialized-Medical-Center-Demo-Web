@@ -89,9 +89,9 @@ for (const width of widths) {
         h1Size: h1 ? getComputedStyle(h1).fontSize : null,
         h1Font: h1 ? getComputedStyle(h1).fontFamily.split(',')[0] : null,
         fonts: {
-          cormorant: document.fonts.check('16px "Cormorant Garamond"'),
-          manrope: document.fonts.check('16px Manrope'),
-          tajawal: document.fonts.check('16px Tajawal'),
+          newsreader: document.fonts.check("16px Newsreader"),
+          work: document.fonts.check("16px 'Work Sans'"),
+          plexArabic: document.fonts.check("16px 'IBM Plex Sans Arabic'"),
         },
         sections: [...document.querySelectorAll('main section')].map((s) => s.id),
         disclaimer: document.querySelector('footer')?.innerText.includes('TRIBAL'),

@@ -26,7 +26,7 @@ export function Logo({ tone = 'dark', className, href }: LogoProps) {
         aria-hidden="true"
         className={cx(
           'grid h-9 w-9 shrink-0 place-items-center rounded-[11px] font-display text-[17px] leading-none',
-          dark ? 'bg-navy text-cream' : 'bg-blush text-navy',
+          dark ? 'bg-navy text-cream' : 'bg-sand text-navy',
         )}
       >
         {mark}
@@ -44,7 +44,7 @@ export function Logo({ tone = 'dark', className, href }: LogoProps) {
         <span
           className={cx(
             'micro-label max-sm:hidden',
-            dark ? 'text-slate-soft' : 'text-blush/75',
+            dark ? 'text-slate-soft' : 'text-sand/75',
           )}
         >
           {sub}

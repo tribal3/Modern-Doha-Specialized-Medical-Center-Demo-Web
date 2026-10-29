@@ -17,8 +17,8 @@ export function Services() {
       <Container className="py-20 sm:py-24 lg:py-28">
         <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-16">
           <Reveal>
-            <p className="eyebrow flex items-center gap-3 text-wine">
-              <span aria-hidden="true" className="h-px w-8 bg-gold" />
+            <p className="eyebrow flex items-center gap-3 text-clay">
+              <span aria-hidden="true" className="h-px w-8 bg-brass" />
               {t.services.eyebrow}
             </p>
             <h2 className="mt-5 max-w-[18ch] text-[clamp(1.95rem,4.2vw,3.15rem)] leading-[1.06] text-navy">
@@ -41,10 +41,10 @@ export function Services() {
                     type="button"
                     onClick={() => setSelected(service)}
                     aria-haspopup="dialog"
-                    className="group flex h-full min-h-[248px] w-full flex-col rounded-[1.5rem] border border-line bg-white p-6 text-start transition-all duration-300 hover:-translate-y-1 hover:border-wine/25 hover:shadow-card focus-visible:-translate-y-1 sm:p-7"
+                    className="group flex h-full min-h-[248px] w-full flex-col rounded-[1.5rem] border border-line bg-white p-6 text-start transition-all duration-300 hover:-translate-y-1 hover:border-clay/25 hover:shadow-card focus-visible:-translate-y-1 sm:p-7"
                   >
                     <div className="flex items-start justify-between gap-3">
-                      <span className="grid h-11 w-11 place-items-center rounded-2xl bg-blush-soft text-wine transition-colors duration-300 group-hover:bg-wine group-hover:text-cream">
+                      <span className="grid h-11 w-11 place-items-center rounded-2xl bg-sand-soft text-clay transition-colors duration-300 group-hover:bg-clay group-hover:text-cream">
                         <Icon
                           aria-hidden="true"
                           className="h-[21px] w-[21px]"
@@ -53,7 +53,7 @@ export function Services() {
                       </span>
                       <span
                         aria-hidden="true"
-                        className="font-display text-[11px] tracking-[0.12em] text-gold/90"
+                        className="font-display text-[11px] tracking-[0.12em] text-brass/90"
                       >
                         {String(index + 1).padStart(2, '0')}
                       </span>
@@ -66,9 +66,9 @@ export function Services() {
                       {service.description}
                     </p>
 
-                    <span className="mt-5 flex items-center justify-between border-t border-line/90 pt-3.5 text-[11.5px] font-semibold text-wine">
+                    <span className="mt-5 flex items-center justify-between border-t border-line/90 pt-3.5 text-[11.5px] font-semibold text-clay">
                       {t.services.cardCta}
-                      <span className="grid h-6 w-6 place-items-center rounded-full border border-wine/20 transition-all duration-300 group-hover:border-wine group-hover:bg-wine group-hover:text-cream">
+                      <span className="grid h-6 w-6 place-items-center rounded-full border border-clay/20 transition-all duration-300 group-hover:border-clay group-hover:bg-clay group-hover:text-cream">
                         <ArrowUpRight
                           aria-hidden="true"
                           className="h-3 w-3 rtl:-scale-x-100"
@@ -85,7 +85,7 @@ export function Services() {
         <p className="mt-8 flex max-w-3xl items-start gap-3 rounded-2xl border border-line/90 bg-cream px-4 py-3.5 text-[11.5px] leading-relaxed text-slate-soft">
           <Info
             aria-hidden="true"
-            className="mt-0.5 h-3.5 w-3.5 shrink-0 text-wine"
+            className="mt-0.5 h-3.5 w-3.5 shrink-0 text-clay"
           />
           {t.services.note}
         </p>

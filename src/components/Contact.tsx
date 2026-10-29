@@ -54,8 +54,8 @@ export function Contact() {
       <Container className="py-20 sm:py-24 lg:py-28">
         <div className="grid gap-6 lg:grid-cols-[1fr_0.8fr] lg:items-end lg:gap-16">
           <Reveal>
-            <p className="eyebrow flex items-center gap-3 text-wine">
-              <span aria-hidden="true" className="h-px w-8 bg-gold" />
+            <p className="eyebrow flex items-center gap-3 text-clay">
+              <span aria-hidden="true" className="h-px w-8 bg-brass" />
               {t.contact.eyebrow}
             </p>
             <h2 className="mt-5 max-w-[14ch] text-[clamp(1.95rem,4.2vw,3.15rem)] leading-[1.06] text-navy">
@@ -88,13 +88,13 @@ export function Contact() {
                     >
                       {secondaryName}
                     </p>
-                    <p className="micro-label mt-2.5 text-wine">
+                    <p className="micro-label mt-2.5 text-clay">
                       {lang === 'ar' ? clinic.roleAr : clinic.roleEn}
                     </p>
                   </div>
                   <span
                     aria-hidden="true"
-                    className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-blush text-wine"
+                    className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-sand text-clay"
                   >
                     <MapPin className="h-[18px] w-[18px]" strokeWidth={1.6} />
                   </span>
@@ -117,7 +117,7 @@ export function Contact() {
                         key={row.label}
                         className="flex items-start gap-3.5 py-3.5"
                       >
-                        <span className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-white text-wine shadow-sm">
+                        <span className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-white text-clay shadow-sm">
                           <Icon
                             aria-hidden="true"
                             className="h-3.5 w-3.5"
@@ -138,7 +138,7 @@ export function Contact() {
                                       rel: 'noopener noreferrer',
                                     }
                                   : {})}
-                                className="transition-colors hover:text-wine"
+                                className="transition-colors hover:text-clay"
                               >
                                 {value}
                               </a>
@@ -178,7 +178,7 @@ export function Contact() {
             <Reveal delay={100}>
               <div className="rounded-[2rem] border border-line bg-white p-6 sm:p-7">
                 <div className="flex items-center gap-3">
-                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-blush-soft text-wine">
+                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-sand-soft text-clay">
                     <Clock aria-hidden="true" className="h-4 w-4" strokeWidth={1.7} />
                   </span>
                   <h3 className="text-[15.5px] font-semibold text-navy">
@@ -213,7 +213,7 @@ export function Contact() {
           </div>
 
           <Reveal delay={120}>
-            <div className="relative h-[340px] overflow-hidden rounded-[2rem] border border-line bg-blush-soft sm:h-[420px] lg:h-full lg:min-h-[520px]">
+            <div className="relative h-[340px] overflow-hidden rounded-[2rem] border border-line bg-sand-soft sm:h-[420px] lg:h-full lg:min-h-[520px]">
               <iframe
                 src={clinic.mapEmbed}
                 title={t.contact.mapTitle}
@@ -230,7 +230,7 @@ export function Contact() {
                   href={clinic.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="pointer-events-auto inline-flex items-center gap-1.5 rounded-full bg-navy px-3.5 py-2 text-[10.5px] font-semibold text-cream shadow-card transition-colors duration-300 hover:bg-wine-dark"
+                  className="pointer-events-auto inline-flex items-center gap-1.5 rounded-full bg-navy px-3.5 py-2 text-[10.5px] font-semibold text-cream shadow-card transition-colors duration-300 hover:bg-clay-dark"
                 >
                   {t.contact.mapCta}
                   <ExternalLink aria-hidden="true" className="h-3 w-3" />

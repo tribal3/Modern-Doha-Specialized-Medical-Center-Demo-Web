@@ -36,8 +36,8 @@ export function Footer() {
               dir={lang === 'ar' ? 'ltr' : 'rtl'}
               className={
                 lang === 'ar'
-                  ? 'mt-4 font-sans text-[13px] text-blush/85'
-                  : 'mt-4 font-arabic text-[15px] text-blush/90'
+                  ? 'mt-4 font-sans text-[13px] text-sand/85'
+                  : 'mt-4 font-arabic text-[15px] text-sand/90'
               }
             >
               {lang === 'ar' ? clinic.nameEn : clinic.nameAr}
@@ -52,7 +52,7 @@ export function Footer() {
           </div>
 
           <nav aria-label={t.footer.exploreTitle}>
-            <h2 className="micro-label text-gold">
+            <h2 className="micro-label text-brass">
               {t.footer.exploreTitle}
             </h2>
             <ul className="mt-4 space-y-2.5">
@@ -60,7 +60,7 @@ export function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-[12px] text-cream/60 transition-colors duration-300 hover:text-blush"
+                    className="text-[12px] text-cream/60 transition-colors duration-300 hover:text-sand"
                   >
                     {link.label}
                   </a>
@@ -70,7 +70,7 @@ export function Footer() {
           </nav>
 
           <nav aria-label={t.footer.servicesTitle}>
-            <h2 className="micro-label text-gold">
+            <h2 className="micro-label text-brass">
               {t.footer.servicesTitle}
             </h2>
             <ul className="mt-4 space-y-2.5">
@@ -78,7 +78,7 @@ export function Footer() {
                 <li key={service.id}>
                   <a
                     href="#services"
-                    className="text-[12px] leading-snug text-cream/60 transition-colors duration-300 hover:text-blush"
+                    className="text-[12px] leading-snug text-cream/60 transition-colors duration-300 hover:text-sand"
                   >
                     {service.title}
                   </a>
@@ -88,20 +88,20 @@ export function Footer() {
           </nav>
 
           <div>
-            <h2 className="micro-label text-gold">
+            <h2 className="micro-label text-brass">
               {t.footer.contactTitle}
             </h2>
             <ul className="mt-4 space-y-3.5">
               <li className="flex items-start gap-2.5">
                 <MapPin
                   aria-hidden="true"
-                  className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold/80"
+                  className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brass/80"
                 />
                 <a
                   href={clinic.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[12px] leading-relaxed text-cream/60 transition-colors hover:text-blush"
+                  className="text-[12px] leading-relaxed text-cream/60 transition-colors hover:text-sand"
                 >
                   {t.contact.locationValue}
                 </a>
@@ -109,12 +109,12 @@ export function Footer() {
               <li className="flex items-center gap-2.5">
                 <Phone
                   aria-hidden="true"
-                  className="h-3.5 w-3.5 shrink-0 text-gold/80"
+                  className="h-3.5 w-3.5 shrink-0 text-brass/80"
                 />
                 <a
                   href={clinic.phoneHref}
                   dir="ltr"
-                  className="text-[12px] text-cream/60 transition-colors hover:text-blush"
+                  className="text-[12px] text-cream/60 transition-colors hover:text-sand"
                 >
                   {clinic.phoneDisplay}
                 </a>
@@ -122,13 +122,13 @@ export function Footer() {
               <li className="flex items-center gap-2.5">
                 <Navigation
                   aria-hidden="true"
-                  className="h-3.5 w-3.5 shrink-0 text-gold/80"
+                  className="h-3.5 w-3.5 shrink-0 text-brass/80"
                 />
                 <a
                   href={clinic.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-[12px] text-cream/60 transition-colors hover:text-blush"
+                  className="inline-flex items-center gap-1 text-[12px] text-cream/60 transition-colors hover:text-sand"
                 >
                   {t.actions.directions}
                   <ArrowUpRight
@@ -148,8 +148,8 @@ export function Footer() {
         <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 md:flex-row md:items-center md:justify-between">
           <p className="text-[10.5px] text-cream/65">{t.footer.copyright}</p>
 
-          <p className="inline-flex w-fit items-center gap-2 rounded-full border border-gold/25 bg-white/[0.03] px-3 py-1.5 text-[10px] leading-relaxed text-gold/90">
-            <span aria-hidden="true" className="h-1 w-1 rounded-full bg-gold" />
+          <p className="inline-flex w-fit items-center gap-2 rounded-full border border-brass/25 bg-white/[0.03] px-3 py-1.5 text-[10px] leading-relaxed text-cream/85">
+            <span aria-hidden="true" className="h-1 w-1 rounded-full bg-brass" />
             {t.footer.disclaimer}
           </p>
 

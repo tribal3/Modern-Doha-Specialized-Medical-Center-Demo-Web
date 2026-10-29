@@ -17,10 +17,10 @@ interface ButtonLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    'bg-navy text-cream hover:bg-wine-dark shadow-[0_18px_36px_-24px_rgba(20,41,74,0.9)]',
+    'bg-navy text-cream hover:bg-clay-dark shadow-[0_18px_36px_-24px_rgba(23,52,80,0.9)]',
   outline:
     'border border-navy/20 text-navy hover:border-navy/40 hover:bg-white',
-  soft: 'bg-blush text-navy hover:bg-[#efd6dd]',
+  soft: 'bg-sand text-navy hover:bg-[#e6d6bc]',
   onDark: 'bg-cream text-navy hover:bg-white',
   ghostOnDark:
     'border border-white/25 text-cream hover:border-white/45 hover:bg-white/10',

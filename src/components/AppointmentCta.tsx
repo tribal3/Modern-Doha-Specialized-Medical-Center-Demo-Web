@@ -15,13 +15,13 @@ export function AppointmentCta() {
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-[radial-gradient(110%_130%_at_88%_0%,rgba(140,59,85,0.6),transparent_58%)]"
+        className="absolute inset-0 bg-[radial-gradient(120%_140%_at_88%_0%,rgba(156,90,60,0.5),transparent_62%)]"
       />
       <svg
         aria-hidden="true"
         viewBox="0 0 400 400"
         fill="none"
-        className="pointer-events-none absolute -end-24 -top-32 h-[420px] w-[420px] text-blush/15"
+        className="pointer-events-none absolute -end-24 -top-32 h-[420px] w-[420px] text-sand/15"
       >
         <circle cx="200" cy="200" r="199" stroke="currentColor" />
         <circle cx="200" cy="200" r="150" stroke="currentColor" />
@@ -33,16 +33,12 @@ export function AppointmentCta() {
           strokeDasharray="2 7"
         />
       </svg>
-      <div
-        aria-hidden="true"
-        className="ring-pattern pointer-events-none absolute -start-10 bottom-0 h-48 w-52 opacity-20"
-      />
 
       <Container className="relative py-16 sm:py-20 lg:py-24">
         <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16">
           <Reveal>
-            <p className="eyebrow flex items-center gap-3 text-blush/80">
-              <span aria-hidden="true" className="h-px w-8 bg-gold" />
+            <p className="eyebrow flex items-center gap-3 text-sand/80">
+              <span aria-hidden="true" className="h-px w-8 bg-brass" />
               {t.appointment.eyebrow}
             </p>
             <h2
@@ -54,7 +50,7 @@ export function AppointmentCta() {
             <p className="mt-5 max-w-[48ch] text-[13.5px] leading-[1.85] text-cream/70 sm:text-[14.5px]">
               {t.appointment.body}
             </p>
-            <p className="mt-5 text-[10.5px] font-medium tracking-[0.08em] text-blush/80 uppercase">
+            <p className="mt-5 text-[10.5px] font-medium tracking-[0.08em] text-sand/80 uppercase">
               {t.appointment.note}
             </p>
           </Reveal>
@@ -86,7 +82,7 @@ export function AppointmentCta() {
               <a
                 href={clinic.phoneHref}
                 dir="ltr"
-                className="mt-2 inline-flex items-center gap-2.5 font-display text-[20px] tracking-[0.04em] text-blush transition-colors duration-300 hover:text-white"
+                className="mt-2 inline-flex items-center gap-2.5 font-display text-[20px] tracking-[0.04em] text-sand transition-colors duration-300 hover:text-white"
               >
                 {clinic.phoneDisplay}
               </a>

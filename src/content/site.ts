@@ -287,10 +287,11 @@ const en: SiteCopy = {
       },
     ],
     cta: 'Patient information',
-    imageAlt: 'A skin care treatment in progress at a dermatology clinic',
-    detailAlt: 'A calm reception desk in a modern medical center',
+    imageAlt:
+      'The center’s building on Al Jabal Street in Al Wakrah, with its sign above the entrance',
+    detailAlt: 'A skin care treatment in progress at a dermatology clinic',
     imageNote:
-      'Illustrative stock imagery of clinical environments — not photographs of this center.',
+      'Building photograph from the center’s public listing. The smaller image is illustrative stock photography, not a photograph of this center.',
     badge: 'Al Wakrah · Qatar',
   },
   patients: {
@@ -508,9 +509,10 @@ const ar: SiteCopy = {
       },
     ],
     cta: 'معلومات للمراجعين',
-    imageAlt: 'جلسة عناية بالبشرة داخل عيادة جلدية',
-    detailAlt: 'مكتب استقبال هادئ في مجمع طبي حديث',
-    imageNote: 'صور توضيحية لبيئات علاجية — وليست صورًا لهذا المجمع.',
+    imageAlt: 'مبنى المجمع في شارع الجبل بالوكرة، مع اللافتة أعلى المدخل',
+    detailAlt: 'جلسة عناية بالبشرة داخل عيادة جلدية',
+    imageNote:
+      'صورة المبنى من القائمة العامة للمجمع. أما الصورة الصغيرة فهي صورة توضيحية وليست صورة للمجمع.',
     badge: 'الوكرة · قطر',
   },
   patients: {

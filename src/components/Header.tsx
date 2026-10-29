@@ -63,8 +63,8 @@ export function Header() {
         className={cx(
           'pointer-events-none absolute inset-0 -z-10 transition-all duration-300',
           scrolled
-            ? 'bg-white/90 shadow-[0_18px_40px_-36px_rgba(20,41,74,0.55)] backdrop-blur-xl'
-            : 'bg-white/75 backdrop-blur-md',
+            ? 'bg-white shadow-[0_18px_40px_-36px_rgba(23,52,80,0.5)]'
+            : 'bg-white',
         )}
       />
       <div className="mx-auto flex h-[72px] w-full max-w-[1320px] items-center justify-between gap-3 px-5 sm:px-8 lg:h-[88px] lg:px-10">
@@ -81,7 +81,7 @@ export function Header() {
               aria-current={active === link.id ? 'location' : undefined}
               className={cx(
                 'relative py-2 text-[13px] font-medium whitespace-nowrap transition-colors duration-300',
-                'after:absolute after:inset-x-0 after:bottom-0 after:h-px after:origin-center after:bg-wine after:transition-transform after:duration-300',
+                'after:absolute after:inset-x-0 after:bottom-0 after:h-px after:origin-center after:bg-clay after:transition-transform after:duration-300',
                 active === link.id
                   ? 'text-navy after:scale-x-100'
                   : 'text-slate-soft after:scale-x-0 hover:text-navy hover:after:scale-x-100',
@@ -162,13 +162,13 @@ export function Header() {
                       <span
                         className={cx(
                           'font-display text-[22px] leading-tight',
-                          active === link.id ? 'text-wine' : 'text-navy',
+                          active === link.id ? 'text-clay' : 'text-navy',
                         )}
                       >
                         {link.label}
                       </span>
                       <span
-                        className="text-[10px] font-semibold tracking-[0.18em] text-gold"
+                        className="text-[10px] font-semibold tracking-[0.18em] text-brass"
                         aria-hidden="true"
                       >
                         {String(index + 1).padStart(2, '0')}
@@ -201,7 +201,7 @@ export function Header() {
               <div className="mt-2.5 grid grid-cols-2 gap-2">
                 <a
                   href={clinic.phoneHref}
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-navy/15 px-3 py-2.5 text-[12px] font-semibold text-navy transition-colors duration-300 hover:bg-blush-soft"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-navy/15 px-3 py-2.5 text-[12px] font-semibold text-navy transition-colors duration-300 hover:bg-sand-soft"
                 >
                   <Phone aria-hidden="true" className="h-3.5 w-3.5" />
                   {t.actions.call}
@@ -210,7 +210,7 @@ export function Header() {
                   href={clinic.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-navy/15 px-3 py-2.5 text-[12px] font-semibold text-navy transition-colors duration-300 hover:bg-blush-soft"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-navy/15 px-3 py-2.5 text-[12px] font-semibold text-navy transition-colors duration-300 hover:bg-sand-soft"
                 >
                   <Navigation aria-hidden="true" className="h-3.5 w-3.5" />
                   {t.actions.directions}

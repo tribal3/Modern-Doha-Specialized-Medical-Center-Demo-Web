@@ -24,13 +24,13 @@ export function SmartImage({
         role="img"
         aria-label={alt}
         className={cx(
-          'flex items-center justify-center bg-[linear-gradient(150deg,#f7e6ea_0%,#fbf3f4_55%,#fbf9f5_100%)]',
+          'flex items-center justify-center bg-[linear-gradient(150deg,#efe4d2_0%,#f8f4ec_55%,#faf5ec_100%)]',
           className,
         )}
       >
         <ImageIcon
           aria-hidden="true"
-          className="h-9 w-9 text-wine/35"
+          className="h-9 w-9 text-clay/35"
           strokeWidth={1.25}
         />
       </div>

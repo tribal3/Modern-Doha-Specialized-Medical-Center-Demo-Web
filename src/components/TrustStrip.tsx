@@ -24,7 +24,7 @@ export function TrustStrip() {
                     key={fact}
                     className="inline-flex items-center gap-1.5 text-[12px] font-medium text-slate-"
                   >
-                    <span className="grid h-4 w-4 shrink-0 place-items-center rounded-full bg-blush text-wine">
+                    <span className="grid h-4 w-4 shrink-0 place-items-center rounded-full bg-sand text-clay">
                       <Check
                         aria-hidden="true"
                         className="h-2.5 w-2.5"
@@ -45,7 +45,7 @@ export function TrustStrip() {
             <p className="flex items-start gap-2 text-[11.5px] leading-relaxed text-slate-soft">
               <MapPin
                 aria-hidden="true"
-                className="mt-0.5 h-3.5 w-3.5 shrink-0 text-wine"
+                className="mt-0.5 h-3.5 w-3.5 shrink-0 text-clay"
               />
               {t.contact.locationValue}
             </p>
@@ -54,7 +54,7 @@ export function TrustStrip() {
           <div className="flex flex-col gap-1.5 lg:items-end lg:text-end">
             <a
               href={clinic.phoneHref}
-              className="inline-flex items-center gap-2 text-[12px] font-semibold text-wine underline-offset-4 transition-colors hover:text-navy hover:underline"
+              className="inline-flex items-center gap-2 text-[12px] font-semibold text-clay underline-offset-4 transition-colors hover:text-navy hover:underline"
             >
               <Phone aria-hidden="true" className="h-3.5 w-3.5" />
               {t.trust.cta}

@@ -24,30 +24,30 @@ export function About() {
             <div className="relative mx-auto w-full max-w-[480px]">
               <div
                 aria-hidden="true"
-                className="absolute -end-3 -bottom-3 h-full w-full rounded-[2rem] border border-gold/45 sm:-end-4 sm:-bottom-4 sm:rounded-[2.5rem]"
+                className="absolute -end-3 -bottom-3 h-full w-full rounded-[2rem] border border-brass/45 sm:-end-4 sm:-bottom-4 sm:rounded-[2.5rem]"
               />
               <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-line/60 sm:rounded-[2.5rem]">
                 <SmartImage
-                  src="/images/about-detail.jpg"
+                  src="/images/center-building.jpg"
                   alt={t.about.imageAlt}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-[center_35%]"
                 />
                 <div
                   aria-hidden="true"
-                  className="absolute inset-0 bg-[linear-gradient(to_top,rgba(20,41,74,0.24),transparent_45%)]"
+                  className="absolute inset-0 bg-[linear-gradient(to_top,rgba(23,52,80,0.24),transparent_45%)]"
                 />
               </div>
 
               <div className="absolute -bottom-7 end-2 w-[46%] overflow-hidden rounded-[1.25rem] border-[5px] border-white shadow-card sm:-bottom-8 sm:end-[-1.25rem]">
                 <SmartImage
-                  src="/images/about-clinic.jpg"
+                  src="/images/about-detail.jpg"
                   alt={t.about.detailAlt}
-                  className="aspect-square w-full object-cover object-[55%_center]"
+                  className="aspect-square w-full object-cover"
                 />
               </div>
 
               <div className="absolute top-5 -start-2 flex items-center gap-2 rounded-full border border-line/70 bg-white/95 px-3.5 py-2 shadow-card backdrop-blur sm:-start-4">
-                <MapPin aria-hidden="true" className="h-3.5 w-3.5 text-wine" />
+                <MapPin aria-hidden="true" className="h-3.5 w-3.5 text-clay" />
                 <span className="text-[10.5px] font-semibold text-navy">
                   {t.about.badge}
                 </span>
@@ -61,8 +61,8 @@ export function About() {
 
           <div className="order-1 lg:order-2">
             <Reveal>
-              <p className="eyebrow flex items-center gap-3 text-wine">
-                <span aria-hidden="true" className="h-px w-8 bg-gold" />
+              <p className="eyebrow flex items-center gap-3 text-clay">
+                <span aria-hidden="true" className="h-px w-8 bg-brass" />
                 {t.about.eyebrow}
               </p>
               <h2 className="mt-5 max-w-[15ch] text-[clamp(1.95rem,4.2vw,3.25rem)] leading-[1.06] text-navy">
@@ -87,7 +87,7 @@ export function About() {
                   const Icon = pointIcons[index] ?? MessageSquare
                   return (
                     <li key={point.title} className="flex items-start gap-3.5">
-                      <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-blush-soft text-wine">
+                      <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-sand-soft text-clay">
                         <Icon
                           aria-hidden="true"
                           className="h-4 w-4"

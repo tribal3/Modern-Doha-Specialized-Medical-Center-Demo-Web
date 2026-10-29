@@ -40,7 +40,7 @@ export function ServiceDialog({ service, onClose }: ServiceDialogProps) {
       >
         <div className="flex items-start justify-between gap-4">
           <div className="flex items-center gap-3">
-            <span className="grid h-12 w-12 place-items-center rounded-2xl bg-blush text-wine">
+            <span className="grid h-12 w-12 place-items-center rounded-2xl bg-sand text-clay">
               <Icon aria-hidden="true" className="h-5 w-5" strokeWidth={1.6} />
             </span>
             <span className="eyebrow text-slate-soft">
@@ -68,7 +68,7 @@ export function ServiceDialog({ service, onClose }: ServiceDialogProps) {
         </p>
 
         <div className="mt-6 rounded-2xl border border-line bg-white p-5">
-          <h4 className="eyebrow text-wine">{t.services.dialogGoodToKnow}</h4>
+          <h4 className="eyebrow text-clay">{t.services.dialogGoodToKnow}</h4>
           <ul className="mt-3 space-y-2.5">
             {t.services.dialogPoints.map((point) => (
               <li
@@ -77,7 +77,7 @@ export function ServiceDialog({ service, onClose }: ServiceDialogProps) {
               >
                 <Check
                   aria-hidden="true"
-                  className="mt-0.5 h-3.5 w-3.5 shrink-0 text-wine"
+                  className="mt-0.5 h-3.5 w-3.5 shrink-0 text-clay"
                   strokeWidth={2.5}
                 />
                 {point}

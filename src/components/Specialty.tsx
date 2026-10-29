@@ -18,8 +18,8 @@ export function Specialty() {
         <div className="grid gap-12 lg:grid-cols-[1fr_0.95fr] lg:gap-16 xl:gap-20">
           <div>
             <Reveal>
-              <p className="eyebrow flex items-center gap-3 text-wine">
-                <span aria-hidden="true" className="h-px w-8 bg-gold" />
+              <p className="eyebrow flex items-center gap-3 text-clay">
+                <span aria-hidden="true" className="h-px w-8 bg-brass" />
                 {t.specialty.eyebrow}
               </p>
               <h2 className="mt-5 max-w-[16ch] text-[clamp(1.95rem,4.2vw,3.15rem)] leading-[1.06] text-navy">
@@ -28,7 +28,7 @@ export function Specialty() {
             </Reveal>
 
             <Reveal delay={80}>
-              <p className="mt-6 max-w-[52ch] border-s-2 border-wine/50 ps-4 text-[15px] leading-[1.8] text-navy sm:text-[16px]">
+              <p className="mt-6 max-w-[52ch] border-s-2 border-clay/50 ps-4 text-[15px] leading-[1.8] text-navy sm:text-[16px]">
                 {t.specialty.intro}
               </p>
             </Reveal>
@@ -48,7 +48,7 @@ export function Specialty() {
               <p className="mt-8 flex max-w-[54ch] items-start gap-3 rounded-2xl border border-line bg-white px-4 py-3.5 text-[11.5px] leading-relaxed text-slate-soft">
                 <Info
                   aria-hidden="true"
-                  className="mt-0.5 h-3.5 w-3.5 shrink-0 text-wine"
+                  className="mt-0.5 h-3.5 w-3.5 shrink-0 text-clay"
                 />
                 {t.specialty.note}
               </p>
@@ -69,7 +69,7 @@ export function Specialty() {
                       key={point.title}
                       className="flex items-start gap-3.5 border-t border-line/80 pt-5 first:border-t-0 first:pt-0"
                     >
-                      <span className="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-blush-soft text-wine">
+                      <span className="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-sand-soft text-clay">
                         <Icon
                           aria-hidden="true"
                           className="h-[18px] w-[18px]"
